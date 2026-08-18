@@ -202,6 +202,6 @@ add_routes(
 )
 
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     port = int(os.environ.get("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
